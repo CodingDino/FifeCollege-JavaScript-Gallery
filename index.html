@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        
+        <!-- Link to our script file -->
+        
+        <script type="text/javascript" src="scripts/slideshowControls.js"></script>
+        
+        <!-- Link to our stylesheet -->
+        
+        <link rel="stylesheet" href="gallery.css">
+        
+    </head>
+    
+    <body>
+
+        <div style="text-align:center">
+            <h2>Image Gallery</h2>
+            <p>Click on the images below:</p>
+        </div>
+
+        <table cellpadding="5"> <tr>
+            <td> <div class="column">
+                <img src="images/sheep.jpg" alt="We have loads of cool animals" style="width:100%" onclick="openImg(this);">
+            </div> </td>
+            <td> <div class="column">
+                <img src="images/kids.jpg" alt="Kids love to play here" style="width:100%" onclick="openImg(this);">
+            </div> </td>
+            <td> <div class="column">
+                <img src="images/beauty.jpg" alt="It's beautiful place to visit!" style="width:100%" onclick="openImg(this);">
+            </div> </td>
+        </tr> </table>
+        
+
+        <div class="container">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            <img id="expandedImg" style="width:100%">
+            <div id="imgtext"></div>
+        </div>
+        
+    </body>
+    
+</html>
